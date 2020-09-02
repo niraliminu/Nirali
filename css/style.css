@@ -1,0 +1,298 @@
+/*=========================================================================
+  HTML Element
+//=======================================================================*/
+html,
+body {
+  font: 100% inherit;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-align: left;
+}
+body {
+	position: relative;
+	color: #555;
+	font-family: "ObjectSans-Regular",sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 32px;
+	-webkit-font-smoothing: antialiased;
+			font-smoothing: antialiased; 
+}
+
+
+@font-face {
+  font-family: 'ObjectSans-Heavy';
+  src: 	url('../fonts/ObjectSans-Heavy.eot?#iefix') format('embedded-opentype'),  
+  	   	url('../fonts/ObjectSans-Heavy.otf')  format('opentype'),
+	    url('../fonts/ObjectSans-Heavy.woff') format('woff'), 
+	    url('../fonts/ObjectSans-Heavy.ttf')  format('truetype'), 
+	    url('../fonts/ObjectSans-Heavy.svg#ObjectSans-Heavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  
+  src: 	url('../fonts/ObjectSans-Regular.eot?#iefix') format('embedded-opentype'),  
+  		url('../fonts/ObjectSans-Regular.otf')  format('opentype'),
+	    url('../fonts/ObjectSans-Regufont-family: 'ObjectSans-Regular';lar.woff') format('woff'), 
+	    url('../fonts/ObjectSans-Regular.ttf')  format('truetype'), 
+	    url('../fonts/ObjectSans-Regular.svg#ObjectSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ObjectSans-Slanted';
+  src: 	url('../fonts/ObjectSans-Slanted.eot?#iefix') format('embedded-opentype'),  
+  		url('../fonts/ObjectSans-Slanted.otf')  format('opentype'),
+	    url('../fonts/ObjectSans-Slanted.woff') format('woff'), 
+	    url('../fonts/ObjectSans-Slanted.ttf')  format('truetype'), 
+	    url('../fonts/ObjectSans-Slanted.svg#ObjectSans-Slanted') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ObjectSans-HeavySlanted';
+  src: 	url('../fonts/ObjectSans-HeavySlanted.eot?#iefix') format('embedded-opentype'),  
+  		url('../fonts/ObjectSans-HeavySlanted.otf')  format('opentype'),
+	    url('../fonts/ObjectSans-HeavySlanted.woff') format('woff'), 
+	    url('../fonts/ObjectSans-HeavySlanted.ttf')  format('truetype'), 
+	    url('../fonts/ObjectSans-HeavySlanted.svg#ObjectSans-HeavySlanted') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TiemposFineTest-Light';
+  src: 	url('../fonts/TiemposFineTest-Light.eot?#iefix') format('embedded-opentype'),  
+  		url('../fonts/TiemposFineTest-Light.otf')  format('opentype'),
+	    url('../fonts/TiemposFineTest-Light.woff') format('woff'), 
+	    url('../fonts/TiemposFineTest-Light.ttf')  format('truetype'), 
+	    url('../fonts/TiemposFineTest-Light.svg#TiemposFineTest-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*heading*/
+
+
+h1{
+	font-size: 96px;
+	line-height: 104px;
+	font-family: 'ObjectSans-Heavy';
+	margin-top: 0;
+}
+
+h1 span{
+	font-family: 'TiemposFineTest-Light';
+	font-weight: 400;
+}
+
+h2{
+	font-size: 64px;
+	line-height: 72px;
+	font-family: 'ObjectSans-Heavy';
+}
+h6{
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 400;	
+	margin-bottom: 10px;
+
+}
+
+h1, h2, h3, h4, h5, h6{	
+	color:#2a2f35;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+	color:#222;
+}
+h1 i, h2 i, h3 i, h4 i, h5 i, h6 i{
+	margin-right:5px;
+}
+h1, h2, h3, h4{	
+	line-height:1.4em;
+}
+ul{
+	width: 100%;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 0 5px 0px;
+	padding: 0 0px;
+	font-size: 24px;
+	width: 100%;
+	transition: all 0.6s;
+}
+a{
+	text-decoration: none;
+	transition: all 0.6s;
+}
+
+.stickyMenu{
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translate(-20% , -20%);
+	z-index: 1;
+}
+.box-content{
+	display: table;
+  	justify-content: center;
+  	align-items: center;
+  	min-height: 100vh;
+  	width: 100%;  
+  	position: relative;
+  	text-align: center;
+}
+.center-box{
+	display: table-cell;
+	vertical-align: middle;
+  	justify-content: center;
+ 	align-items: center;
+  	height: 100%;
+  	width: 100%;
+}
+.clickbtn{
+
+	width:10px;
+	height: 10px;
+	border-radius: 100%;
+	background-color: #fff;
+	margin-bottom: 3px;
+	cursor: pointer;
+}
+.stickyMenu .clickbtn.bluedots{
+	background-color: #000096
+}
+.content{
+	display: none;
+}
+#menu .link.active
+{
+    background-color:blue;
+    cursor: pointer;
+}
+
+
+/***** General css *****/
+
+img.round-design {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+}
+
+.full-section{
+
+	width: 100%;
+	display: inline-block;
+}
+.home-logo{
+	width: 100%;
+	max-width: 250px;
+}
+.white-para{
+	color: #fff;
+}
+.center-text{
+	text-align: center;
+}
+
+
+/***** Landing page  *****/
+
+/***** Inner pages *****/
+
+.innerPages .header{
+	width: 100%;
+	display: inline-block;
+}
+.inner-main{
+	padding-bottom: 100px;
+}
+.left-section{
+	width: 50%;
+	display: inline-block;
+	float: left;
+	text-align: left;
+}
+.right-section{
+	width: 50%;
+	display: inline-block;
+	float: right;
+}
+.inner-logo{
+	width: 100%;
+	max-width: 150px;
+	margin-top: 20px;
+	margin-left: 20px;
+
+}
+.leftcontent {   
+    width: 40%;
+    text-align: left;
+    float: left;
+    padding-left: 90px;
+    padding-top: 30px;
+}
+.rightcontent {
+    padding-left: 40px;
+    width: 35%;
+    text-align: left;
+    float: left;
+    padding-top: 150px;    
+}
+.two.content *{
+	color: #000096
+}
+.two .rightcontent img{
+	width: 100%;
+}
+.three.content *{
+	color: #00484E
+}
+.three.content ul{
+	margin-top: 100px;
+}
+.three.content li a{
+	padding: 0 5px;
+}
+.three.content li a:hover{
+	transition: all 0.6s;
+	background-color: #DCE9AE;
+}
+.three.content h1 span{
+	position: relative;
+	z-index: 1;
+}
+.three.content h1 span:before{	
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: -1;      
+    left: 0;
+    top: 30px;
+}
+.three.content h1 span.green-bg:before{
+	background-color: #DCE9AE;
+}
+.three.content h1 span.orange-bg:before{
+	background-color: #FF4400;
+}
+.three.content h2{
+	padding: 0 5px;
+}
+.five.content *{
+	color: #FFCBFF;
+}
